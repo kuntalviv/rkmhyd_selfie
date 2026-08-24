@@ -1,123 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humare Nayak Swamiji</title>
     <!-- Link external CSS stylesheet -->
     <link rel="stylesheet" href="home.css">
-</head>
-<body>
-  <main class="home-page">
+  </head>
+  <body>
+    <main class="home-page">
 
-  <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">September 11 • Universal Brotherhood Day</p>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">September 11 • Universal Brotherhood Day</p>
 
-      <h1>
-        Celebrate the message of
-        <span>Universal Brotherhood</span>
-      </h1>
+          <h1>
+            Celebrate the message of
+            <span>Universal Brotherhood</span>
+          </h1>
 
-      <p class="hero-text">
-        On September 11, 1893, Swami Vivekananda delivered his historic
-        address at the World's Parliament of Religions in Chicago,
-        beginning with the unforgettable words
-        “Sisters and Brothers of America.”
-      </p>
+          <p class="hero-text">
+          On September 11, 1893, Swami Vivekananda delivered his historic
+          address at the World's Parliament of Religions in Chicago,
+          beginning with the unforgettable words
+          “Sisters and Brothers of America.”
+          </p>
 
-      <p class="hero-text">
-        Join us in revisiting that message of harmony, acceptance and
-        universal brotherhood.
-      </p>
+          <p class="hero-text">
+          Join us in revisiting that message of harmony, acceptance and
+          universal brotherhood.
+          </p>
 
-      <a class="primary-cta" href="./content.html">
-        Begin the Experience
-      </a>
-    </div>
-  </section>
+          <div class="hero-actions">
 
+            <a class="primary-cta" href="./content.html">
+              Begin the Experience
+            </a>
 
-  <section class="about-section">
-    <p class="section-label">Why September 11?</p>
+            <button id="share_btn" class="share-btn" type="button">
+              ↗ Share
+            </button>
 
-    <h2>A message that still speaks to the world</h2>
-
-    <p>
-      Swami Vivekananda's Chicago address introduced millions to India's
-      spiritual traditions and offered a powerful call for tolerance,
-      acceptance and harmony among religions.
-    </p>
-
-    <p>
-      This experience invites you to listen to the address, reflect on
-      its message, answer a few simple questions and receive a
-      commemorative certificate.
-    </p>
-  </section>
+          </div>
+        </div>
+      </section>
 
 
-  <section class="process-section">
+      <section class="about-section">
+        <p class="section-label">Why September 11?</p>
 
-    <p class="section-label">How it works</p>
-    <h2>Three simple steps</h2>
-
-    <div class="process-grid">
-
-      <article class="process-card">
-        <div class="step-number">1</div>
-
-        <h3>Listen</h3>
+        <h2>A message that still speaks to the world</h2>
 
         <p>
-          Listen to Swami Vivekananda's historic Chicago address while
-          following along with the speech.
+        Swami Vivekananda's Chicago address introduced millions to India's
+        spiritual traditions and offered a powerful call for tolerance,
+        acceptance and harmony among religions.
         </p>
-      </article>
-
-
-      <article class="process-card">
-        <div class="step-number">2</div>
-
-        <h3>Reflect</h3>
 
         <p>
-          Answer five simple questions about the message you have just
-          heard.
+        This experience invites you to listen to the address, reflect on
+        its message, answer a few simple questions and receive a
+        commemorative certificate.
         </p>
-      </article>
+      </section>
 
 
-      <article class="process-card">
-        <div class="step-number">3</div>
+      <section class="process-section">
 
-        <h3>Get Your Certificate</h3>
+        <p class="section-label">How it works</p>
+        <h2>Three simple steps</h2>
+
+        <div class="process-grid">
+
+          <article class="process-card">
+            <div class="step-number">1</div>
+
+            <h3>Listen</h3>
+
+            <p>
+            Listen to Swami Vivekananda's historic Chicago address while
+            following along with the speech.
+            </p>
+          </article>
+
+
+          <article class="process-card">
+            <div class="step-number">2</div>
+
+            <h3>Reflect</h3>
+
+            <p>
+            Answer five simple questions about the message you have just
+            heard.
+            </p>
+          </article>
+
+
+          <article class="process-card">
+            <div class="step-number">3</div>
+
+            <h3>Get Your Certificate</h3>
+
+            <p>
+            Take a selfie and receive your commemorative certificate from
+            Ramakrishna Math Hyderabad.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+
+      <section class="final-cta">
+        <p class="section-label">Join us</p>
+
+        <h2>Let's celebrate Universal Brotherhood Day together.</h2>
 
         <p>
-          Take a selfie and receive your commemorative certificate from
-          Ramakrishna Math Hyderabad.
+        Listen. Reflect. Remember the message.
         </p>
-      </article>
 
-    </div>
-  </section>
+        <a class="primary-cta" href="./content.html">
+            Start Now
+        </a>
 
+<button id="bottom_share_btn" class="share-btn" type="button">
+    ↗ Share
+</button>
+      </section>
 
-  <section class="final-cta">
-    <p class="section-label">Join us</p>
+    </main>
+    <script>
+      const share_btn = document.getElementById("share_btn");
 
-    <h2>Let's celebrate Universal Brotherhood Day together.</h2>
+share_btn.addEventListener("click", async () => {
+  const shareData = {
+    title: "Universal Brotherhood Day",
+    text: "Let's celebrate Universal Brotherhood Day together and revisit Swami Vivekananda's historic Chicago Address.",
+    url: window.location.href
+  };
 
-    <p>
-      Listen. Reflect. Remember the message.
-    </p>
+  // Native share sheet
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+    } catch (error) {
+      // Ignore when user simply cancels sharing
+      if (error.name !== "AbortError") {
+        console.error("Share failed:", error);
+      }
+    }
 
-    <a class="primary-cta" href="./speech.html">
-      Start Now
-    </a>
-  </section>
+    return;
+  }
 
-</main>
-</body>
+  // Fallback for desktop browsers without Web Share API
+  try {
+    await navigator.clipboard.writeText(window.location.href);
+
+    const oldText = share_btn.innerText;
+
+    share_btn.innerText = "✓ Link Copied";
+
+    setTimeout(() => {
+      share_btn.innerText = oldText;
+    }, 2000);
+
+  } catch (error) {
+    console.error("Could not copy link:", error);
+    alert("Unable to share this page.");
+  }
+});
+
+      const bottom_share_btn =
+  document.getElementById("bottom_share_btn");
+
+bottom_share_btn.addEventListener("click", () => {
+  share_btn.click();
+});
+    </script>
+  </body>
 </html>
 

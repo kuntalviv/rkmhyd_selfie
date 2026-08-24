@@ -126,20 +126,7 @@ const reset_speech = () => {
 // ======================================================
 
 play_btn.addEventListener("click", () => {
-  audio.currentTime = 0;
-
-  if (active_word_index >= 0) {
-    word_spans[active_word_index]
-      .classList.remove("word-active");
-  }
-
-  active_word_index = -1;
-  active_paragraph = null;
-
-  speech_main_text.scrollTop = 0;
-
   scroll_to_speech();
-
   audio.play();
 });
 
@@ -380,6 +367,7 @@ let video_ele = null;
 let capture_btn = null;
 let retake_btn = null;
 let download_btn = null;
+let share_cert_btn = null;
 let canvas = null;
 
 
@@ -432,6 +420,10 @@ const reset_selfie = () => {
   if (download_btn) {
     download_btn.remove();
     download_btn = null;
+  }
+  if (share_cert_btn) {
+    share_cert_btn.remove();
+    share_cert_btn = null;
   }
 
 
@@ -862,6 +854,56 @@ selfie_btn.addEventListener("click", async () => {
       });
 
       selfie_section.appendChild(download_btn);
+
+      share_cert_btn = document.createElement("button");
+      share_cert_btn.innerText = "Share Certificate";
+      share_cert_btn.classList.add("share-cert-btn");
+      share_cert_btn.addEventListener("click", () => {
+        canvas.toBlob(async (blob) => {
+
+          const file = new File(
+            [blob],
+            "Vivekananda_Certificate.png",
+            {
+              type: "image/png"
+            }
+          );
+
+
+          if (
+            navigator.share &&
+            navigator.canShare?.({
+              files: [file]
+            })
+          ) {
+
+            try {
+
+              await navigator.share({
+                title: "Universal Brotherhood Day",
+                text: "I celebrated Universal Brotherhood Day with Ramakrishna Math Hyderabad.",
+                files: [file]
+              });
+
+            } catch (error) {
+
+              console.log(
+                "Share cancelled:",
+                error
+              );
+            }
+
+          } else {
+
+            alert(
+              "Sharing is not supported on this browser. Please download the certificate instead."
+            );
+          }
+
+        }, "image/png");
+      });
+
+      selfie_section.appendChild(share_cert_btn);
     }
 
   );
@@ -878,14 +920,22 @@ const pages = [
   document.getElementById("selfie_content")
 ];
 
+const journey_steps = [
+  document.getElementById("speech_journey_step"),
+  document.getElementById("quiz_journey_step"),
+  document.getElementById("selfie_journey_step")
+];
 
 let current_page = 0;
-
+let current_journey_step = 0;
 
 const show_page = (index) => {
   pages.forEach((page, i) => {
     page.style.display =
       i === index ? "block" : "none";
+  });
+  journey_steps.forEach((step, i) => {
+    i === index ? step.classList.add("active") : step.classList.remove("active");
   });
 
   // Disable Previous on first page
@@ -928,125 +978,6 @@ prev_btn.addEventListener("click", () => {
     show_page(current_page);
   }
 });
-
-
-// ======================================================
-// QUIZ QUESTION BANK
-// ======================================================
-
-const question_bank = [
-  {
-    question:
-      "How did Swami Vivekananda begin his address?",
-
-    options: [
-      "Ladies and Gentlemen",
-      "Sisters and Brothers of America",
-      "Friends of America",
-      "Brothers and Sisters"
-    ],
-
-    answer: 1
-  },
-
-  {
-    question:
-      "Where was the speech delivered?",
-
-    options: [
-      "London",
-      "Boston",
-      "Chicago",
-      "New York"
-    ],
-
-    answer: 2
-  },
-
-  {
-    question:
-      "What did Vivekananda thank the audience for?",
-
-    options: [
-      "Their warm and cordial welcome",
-      "Their donations",
-      "Their invitation to India",
-      "Their political support"
-    ],
-
-    answer: 0
-  },
-
-  {
-    question:
-      "What did Vivekananda say he was proud to belong to?",
-
-    options: [
-      "A political movement",
-      "A religion that taught tolerance",
-      "A military organization",
-      "A university"
-    ],
-
-    answer: 1
-  },
-
-  {
-    question:
-      "What did he say his nation had sheltered?",
-
-    options: [
-      "Only monks",
-      "Only merchants",
-      "The persecuted and refugees",
-      "Only scholars"
-    ],
-
-    answer: 2
-  },
-
-  {
-    question:
-      "Which religious text did Vivekananda mention?",
-
-    options: [
-      "The Gita",
-      "The Bible",
-      "The Quran",
-      "The Torah"
-    ],
-
-    answer: 0
-  },
-
-  {
-    question:
-      "What did Vivekananda strongly criticize near the end?",
-
-    options: [
-      "Education",
-      "Travel",
-      "Fanaticism",
-      "Science"
-    ],
-
-    answer: 2
-  },
-
-  {
-    question:
-      "How many questions are randomly selected for this quiz?",
-
-    options: [
-      "3",
-      "4",
-      "5",
-      "10"
-    ],
-
-    answer: 2
-  }
-];
 
 
 // ======================================================

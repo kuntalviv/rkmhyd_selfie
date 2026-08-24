@@ -474,3 +474,554 @@ const english_lyrics = [
   { word: "goal.", time: 188.30 },
 ];
 
+const question_bank = [
+  {
+    question: "Where did Swami Vivekananda deliver his famous “Response to Welcome”?",
+    options: [
+      "London",
+      "Chicago",
+      "New York",
+      "Boston"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "On which date did Swami Vivekananda deliver his “Response to Welcome”?",
+    options: [
+      "11 September 1893",
+      "12 September 1893",
+      "19 September 1893",
+      "27 September 1893"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "At which event did Swami Vivekananda give his “Response to Welcome”?",
+    options: [
+      "World Peace Conference",
+      "Parliament of Religions",
+      "World Education Conference",
+      "International Congress"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "How did Swami Vivekananda begin his address to the audience?",
+    options: [
+      "Dear Friends of America",
+      "Respected Citizens",
+      "Sisters and Brothers of America",
+      "Ladies and Gentlemen"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "What emotion did Swami Vivekananda say filled his heart when he received the welcome?",
+    options: [
+      "Pride",
+      "Joy",
+      "Fear",
+      "Surprise"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Swami Vivekananda said he thanked the audience in the name of which people?",
+    options: [
+      "The people of Chicago",
+      "The people of India",
+      "The Hindu people",
+      "The people of Bengal"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "Which religion did Swami Vivekananda describe as the “mother of religions”?",
+    options: [
+      "Buddhism",
+      "Hinduism",
+      "Christianity",
+      "Judaism"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What principle did Swami Vivekananda say Hinduism had taught the world?",
+    options: [
+      "Religious competition",
+      "Universal acceptance",
+      "Political freedom",
+      "Economic equality"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "According to Swami Vivekananda, what does Hinduism teach regarding different religions?",
+    options: [
+      "Only one religion is true",
+      "All religions are false",
+      "All religions are true",
+      "Religions should be avoided"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "What does “universal acceptance” mean in the context of the speech?",
+    options: [
+      "Rejecting all religions",
+      "Respectfully accepting different religions",
+      "Following every religion",
+      "Avoiding religious beliefs"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What did India traditionally offer to people who were persecuted because of their religion?",
+    options: [
+      "Wealth",
+      "Political positions",
+      "Shelter",
+      "Military training"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "Which community did Swami Vivekananda specifically mention as having sought refuge in India?",
+    options: [
+      "Israelites",
+      "Romans",
+      "Greeks",
+      "Egyptians"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "Which religious community did Swami Vivekananda say India had sheltered as a remnant of a great nation?",
+    options: [
+      "Zoroastrians",
+      "Romans",
+      "Greeks",
+      "Buddhists"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "What does the example of persecuted communities finding refuge in India demonstrate?",
+    options: [
+      "India’s military power",
+      "India’s tradition of religious acceptance",
+      "India’s economic strength",
+      "India’s political influence"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What natural image does Swami Vivekananda use to explain different religious paths?",
+    options: [
+      "Mountains reaching the sky",
+      "Streams flowing into the sea",
+      "Flowers growing in a garden",
+      "Birds flying together"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "In the hymn quoted by Swami Vivekananda, what do different streams ultimately reach?",
+    options: [
+      "Different mountains",
+      "The same sea",
+      "Different forests",
+      "The same river"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What idea is illustrated by different streams flowing into the same sea?",
+    options: [
+      "All countries have the same culture",
+      "Different religious paths can lead to the same Divine goal",
+      "All rivers are identical",
+      "Nature is more powerful than religion"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which sacred Hindu text does Swami Vivekananda refer to in his speech?",
+    options: [
+      "The Upanishads",
+      "The Ramayana",
+      "The Bhagavad Gita",
+      "The Vedas"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "What central idea from the Bhagavad Gita does Swami Vivekananda emphasize?",
+    options: [
+      "People must follow one identical path",
+      "People can approach the Divine through different paths",
+      "Religion should be abandoned",
+      "Only monks can attain God"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda say the Parliament of Religions itself demonstrates?",
+    options: [
+      "Religious diversity can come together",
+      "One religion is superior",
+      "Science is more important than religion",
+      "Political unity is necessary"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "Which of the following does Swami Vivekananda identify as having long possessed the earth?",
+    options: [
+      "Knowledge",
+      "Sectarianism",
+      "Education",
+      "Democracy"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which word in Swami Vivekananda’s speech refers to narrow divisions between religious groups?",
+    options: [
+      "Sectarianism",
+      "Acceptance",
+      "Refuge",
+      "Harmony"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "What does Swami Vivekananda identify as one of the causes of violence between religious groups?",
+    options: [
+      "Universal acceptance",
+      "Bigotry",
+      "Education",
+      "Friendship"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which word does Swami Vivekananda use for extreme and intolerant religious zeal?",
+    options: [
+      "Tolerance",
+      "Fanaticism",
+      "Acceptance",
+      "Compassion"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "According to Swami Vivekananda, what did sectarianism, bigotry and fanaticism often fill the earth with?",
+    options: [
+      "Knowledge",
+      "Wealth",
+      "Violence",
+      "Happiness"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "What does Swami Vivekananda say these forces often drenched the earth in?",
+    options: [
+      "Water",
+      "Tears",
+      "Human blood",
+      "Rain"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "What did religious fanaticism destroy according to Swami Vivekananda?",
+    options: [
+      "Civilization",
+      "Agriculture",
+      "Science",
+      "Literature"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "What did fanaticism send entire nations into, according to the speech?",
+    options: [
+      "Prosperity",
+      "Despair",
+      "Freedom",
+      "Happiness"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda call sectarianism, bigotry and fanaticism?",
+    options: [
+      "Great teachers",
+      "Horrible demons",
+      "Divine powers",
+      "Ancient traditions"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda hope will come to an end?",
+    options: [
+      "Religious festivals",
+      "Religious fanaticism",
+      "Religious education",
+      "Religious traditions"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda hope the bell of the Parliament of Religions will become?",
+    options: [
+      "A celebration bell",
+      "A victory bell",
+      "The death-knell of fanaticism",
+      "A warning bell"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "Which practice does Swami Vivekananda hope will end along with fanaticism?",
+    options: [
+      "Religious education",
+      "Persecution",
+      "Meditation",
+      "Prayer"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which two forms of persecution does Swami Vivekananda specifically mention?",
+    options: [
+      "By wealth and power",
+      "By the sword and by the pen",
+      "By speech and debate",
+      "By armies and kings"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What kind of feelings does Swami Vivekananda hope will disappear?",
+    options: [
+      "Friendly feelings",
+      "Uncharitable feelings",
+      "Loving feelings",
+      "National feelings"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda hope will happen to people following different religious paths?",
+    options: [
+      "They will fight each other",
+      "They will reach the same goal",
+      "They will abandon religion",
+      "They will follow one religion"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does the speech primarily advocate?",
+    options: [
+      "Religious superiority",
+      "Religious harmony",
+      "Political revolution",
+      "Economic development"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which value is most strongly associated with Swami Vivekananda’s Chicago response?",
+    options: [
+      "Intolerance",
+      "Universal acceptance",
+      "Competition",
+      "Isolation"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Why does Swami Vivekananda express gratitude to the audience?",
+    options: [
+      "They offered him a political position",
+      "They gave him a warm welcome",
+      "They gave him money",
+      "They invited him to America"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda say about India’s attitude toward persecuted religions?",
+    options: [
+      "India rejected them",
+      "India welcomed and sheltered them",
+      "India ignored them",
+      "India converted them"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does the phrase “different paths” represent in the context of Swami Vivekananda’s speech?",
+    options: [
+      "Different political systems",
+      "Different religions and approaches to God",
+      "Different geographical routes",
+      "Different educational systems"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What is the opposite of the religious attitude Swami Vivekananda promotes in this speech?",
+    options: [
+      "Acceptance",
+      "Tolerance",
+      "Fanaticism",
+      "Harmony"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "What does Swami Vivekananda want humanity to overcome?",
+    options: [
+      "Knowledge",
+      "Religious intolerance",
+      "Cultural diversity",
+      "Spirituality"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which statement best represents Swami Vivekananda’s view of religious diversity?",
+    options: [
+      "Diversity should be eliminated",
+      "Different religions can coexist",
+      "Only ancient religions matter",
+      "Religions should never interact"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does the sea symbolize in Swami Vivekananda’s illustration of different streams?",
+    options: [
+      "Material wealth",
+      "The common Divine destination",
+      "Political power",
+      "The greatness of America"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does the speech suggest about India’s religious tradition?",
+    options: [
+      "It rejects other religions",
+      "It accepts and respects different religious traditions",
+      "It discourages religious diversity",
+      "It supports religious conflict"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda want humanity to overcome?",
+    options: [
+      "Knowledge",
+      "Religious intolerance",
+      "Cultural diversity",
+      "Spirituality"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Why does Swami Vivekananda express gratitude to the people of America?",
+    options: [
+      "He felt welcomed by them",
+      "He wanted to become an American",
+      "He wanted political support",
+      "He wanted financial assistance"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "Which of the following best describes Swami Vivekananda’s attitude toward other religions?",
+    options: [
+      "Hostile",
+      "Respectful and accepting",
+      "Indifferent",
+      "Competitive"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "What does Swami Vivekananda hope will happen to sectarianism, bigotry and fanaticism?",
+    options: [
+      "They will grow stronger",
+      "They will disappear",
+      "They will unite religions",
+      "They will control society"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Which one sentence best summarizes the “Response to Welcome”?",
+    options: [
+      "One religion should rule the world.",
+      "Different religions should respect one another and recognize their common spiritual goal.",
+      "Religious differences should be ignored.",
+      "India should become a political power."
+    ],
+    answer: 1
+  }
+];

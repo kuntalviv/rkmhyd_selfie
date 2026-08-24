@@ -56,21 +56,21 @@
 
             <div class="journey-progress">
 
-                <div class="journey-step active">
+                <div id="speech_journey_step" class="journey-step active">
                     <span class="journey-number">1</span>
                     <span>Listen</span>
                 </div>
 
                 <div class="journey-line"></div>
 
-                <div class="journey-step">
+                <div id="quiz_journey_step" class="journey-step">
                     <span class="journey-number">2</span>
                     <span>Reflect</span>
                 </div>
 
                 <div class="journey-line"></div>
 
-                <div class="journey-step">
+                <div id="selfie_journey_step" class="journey-step">
                     <span class="journey-number">3</span>
                     <span>Celebrate</span>
                 </div>
@@ -141,6 +141,7 @@
                         id="toggle_speech_btn"
                         class="control-btn follow-btn"
                         type="button"
+                        style="display:none;"
                         disabled
                     >
                         Follow Speech

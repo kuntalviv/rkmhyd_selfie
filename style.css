@@ -798,7 +798,8 @@ button:disabled {
 }
 
 .capture-btn,
-.download-btn {
+.download-btn,
+.share-cert-btn{
     display: block;
 
     margin: 15px auto;
