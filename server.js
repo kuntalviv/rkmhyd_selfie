@@ -104,6 +104,20 @@ const server = http.createServer((req, res) => {
     })
   }
 
+  else if (req.url === "/swamiji_icon.jpg") {
+    fs.readFile("swamiji_icon.jpg", (err, data) => {
+      if (err) {
+
+        res.writeHead(500);
+        res.end("Error loading app.js");
+        return;
+      }
+
+      res.writeHead(200, { "Content-Type": "image/jpg" });
+      res.end(data);
+    })
+  }
+
   else if (req.method === 'GET' && req.url === '/speech.mp3') {
 
     // Verify the MP3 file exists before attempting to stream
