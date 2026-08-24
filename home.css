@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  background: #fffaf3;
+  color: #2b2118;
+}
+
+
+.home-page {
+  width: 100%;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 24px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff7e8,
+      #f4e4c6
+    );
+}
+
+
+.hero-content {
+  max-width: 850px;
+}
+
+
+.eyebrow,
+.section-label {
+  margin-bottom: 14px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #b04a1d;
+}
+
+
+.hero h1 {
+  margin: 0 0 24px;
+
+  font-size: clamp(
+    42px,
+    7vw,
+    78px
+  );
+
+  line-height: 1.05;
+}
+
+
+.hero h1 span {
+  color: #c35422;
+}
+
+
+.hero-text {
+  max-width: 720px;
+
+  margin:
+    0 auto
+    16px;
+
+  font-size: 20px;
+  line-height: 1.7;
+
+  color: #5d5044;
+}
+
+
+.primary-cta {
+  display: inline-block;
+
+  margin-top: 26px;
+
+  padding: 15px 30px;
+
+  border-radius: 999px;
+
+  background: #c35422;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.primary-cta:hover {
+  background: #9d3e19;
+  transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   ABOUT
+================================================== */
+
+.about-section {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 90px 24px;
+
+  text-align: center;
+}
+
+
+.about-section h2,
+.process-section h2,
+.final-cta h2 {
+  margin:
+    0 0
+    24px;
+
+  font-size: clamp(
+    32px,
+    5vw,
+    48px
+  );
+}
+
+
+.about-section p {
+  font-size: 19px;
+  line-height: 1.8;
+
+  color: #5d5044;
+}
+
+
+/* ==================================================
+   PROCESS
+================================================== */
+
+.process-section {
+  padding: 90px 24px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+
+.process-grid {
+  max-width: 1100px;
+
+  margin:
+    50px auto
+    0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+.process-card {
+  padding: 36px 28px;
+
+  border: 1px solid #eadbc8;
+  border-radius: 18px;
+
+  background: #fffaf3;
+
+  text-align: left;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.process-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 14px 35px
+    rgba(70, 45, 25, 0.08);
+}
+
+
+.step-number {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  border-radius: 50%;
+
+  background: #c35422;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+
+.process-card h3 {
+  margin:
+    0 0
+    14px;
+
+  font-size: 25px;
+}
+
+
+.process-card p {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #65584c;
+}
+
+
+/* ==================================================
+   FINAL CTA
+================================================== */
+
+.final-cta {
+  padding: 100px 24px;
+
+  text-align: center;
+
+  background: #2d2118;
+
+  color: white;
+}
+
+
+.final-cta .section-label {
+  color: #efb17c;
+}
+
+
+.final-cta h2 {
+  max-width: 800px;
+
+  margin:
+    0 auto
+    20px;
+}
+
+
+.final-cta p {
+  font-size: 20px;
+
+  color: #dbcfc5;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: auto;
+
+    padding:
+      70px 20px;
+  }
+
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .process-card {
+    text-align: center;
+  }
+
+
+  .step-number {
+    margin:
+      0 auto
+      20px;
+  }
+
+}

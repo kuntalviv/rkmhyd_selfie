@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Swami Vivekananda's Chicago Address</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         PAGE HEADER
+    =================================================== -->
+
+    <header class="site-header">
+        <div class="header-inner">
+
+            <a href="./" class="home-link">
+                ← Home
+            </a>
+
+            <div class="header-title">
+                <span class="header-kicker">
+                    Universal Brotherhood Day
+                </span>
+
+                <h1>
+                    Swami Vivekananda's
+                    <span>Chicago Address</span>
+                </h1>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="page-shell">
+
+        <section class="main-content">
+
+
+            <!-- ==========================================
+                 STEP INDICATOR
+            =========================================== -->
+
+            <div class="journey-progress">
+
+                <div class="journey-step active">
+                    <span class="journey-number">1</span>
+                    <span>Listen</span>
+                </div>
+
+                <div class="journey-line"></div>
+
+                <div class="journey-step">
+                    <span class="journey-number">2</span>
+                    <span>Reflect</span>
+                </div>
+
+                <div class="journey-line"></div>
+
+                <div class="journey-step">
+                    <span class="journey-number">3</span>
+                    <span>Celebrate</span>
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 SPEECH
+            =================================================== -->
+
+            <section id="speech_content">
+
+                <div class="section-heading">
+
+                    <span
+                        id="speech_label"
+                        class="step-badge"
+                    >
+                        Step 1 of 3
+                    </span>
+
+                    <h2>Listen to the Historic Address</h2>
+
+                    <p>
+                        Listen to Swami Vivekananda's words while
+                        following along with the original speech.
+                    </p>
+
+                </div>
+
+
+                <!-- AUDIO CONTROLS -->
+
+                <div class="speech-controls">
+
+                    <button
+                        id="play_btn"
+                        class="control-btn control-primary"
+                        type="button"
+                    >
+                        <span>▶</span>
+                        Play
+                    </button>
+
+
+                    <button
+                        id="pause_btn"
+                        class="control-btn"
+                        type="button"
+                    >
+                        <span>⏸</span>
+                        Pause
+                    </button>
+
+
+                    <button
+                        id="stop_btn"
+                        class="control-btn"
+                        type="button"
+                    >
+                        <span>⏹</span>
+                        Stop
+                    </button>
+
+
+                    <button
+                        id="toggle_speech_btn"
+                        class="control-btn follow-btn"
+                        type="button"
+                        disabled
+                    >
+                        Follow Speech
+                    </button>
+
+                </div>
+
+
+                <audio
+                    id="speech_audio"
+                    src="./speech.mp3"
+                ></audio>
+
+
+                <!-- SPEECH DOCUMENT -->
+
+                <section id="speech_container">
+
+                    <div class="speech-portrait">
+
+                        <div class="portrait-frame">
+
+                            <img
+                                src="https://belurmath.org/wp-content/uploads/2018/07/Swami-Vivekananda-Chicago-Address-217x300.png"
+                                alt="Swami Vivekananda"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="speech-heading">
+
+                        <span class="speech-decoration">
+                            ✦
+                        </span>
+
+                        <h2>
+                            Response to Welcome
+                        </h2>
+
+                        <p>
+                            At the World's Parliament of Religions
+                        </p>
+
+                        <strong>
+                            Chicago • 11 September 1893
+                        </strong>
+
+                    </div>
+
+
+                    <div class="speech-divider">
+                        <span></span>
+                        <span class="divider-symbol">ॐ</span>
+                        <span></span>
+                    </div>
+
+
+                    <section id="speech_main_text">
+
+                        <p id="para_1"></p>
+                        <p id="para_2"></p>
+                        <p id="para_3"></p>
+                        <p id="para_4"></p>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+
+            <!-- ==================================================
+                 QUIZ
+            =================================================== -->
+
+            <section id="quiz_content">
+
+                <div class="section-heading">
+
+                    <span
+                        id="quiz_label"
+                        class="step-badge"
+                    >
+                        Step 2 of 3
+                    </span>
+
+                    <h2>Reflect on the Message</h2>
+
+                    <p>
+                        Answer five simple questions about the
+                        speech you have just experienced.
+                    </p>
+
+                </div>
+
+
+                <div class="quiz-panel">
+
+                    <div class="quiz-panel-heading">
+
+                        <div>
+                            <span class="mini-label">
+                                Quick Quiz
+                            </span>
+
+                            <h3>
+                                How well do you remember the message?
+                            </h3>
+                        </div>
+
+                        <span class="question-count">
+                            5 Questions
+                        </span>
+
+                    </div>
+
+
+                    <div id="quiz_questions"></div>
+
+
+                    <div class="quiz-actions">
+
+                        <button
+                            id="evaluate_quiz_btn"
+                            class="primary-btn"
+                            type="button"
+                        >
+                            Evaluate Answers
+                        </button>
+
+
+                        <button
+                            id="reroll_quiz_btn"
+                            class="secondary-btn"
+                            type="button"
+                        >
+                            ↻ Reroll Questions
+                        </button>
+
+
+                        <span id="quiz_result"></span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 SELFIE / CERTIFICATE
+            =================================================== -->
+
+            <section id="selfie_content">
+
+                <div class="section-heading">
+
+                    <span
+                        id="selfie_label"
+                        class="step-badge"
+                    >
+                        Step 3 of 3
+                    </span>
+
+                    <h2>Celebrate the Message</h2>
+
+                    <p>
+                        Add your name, take a selfie and create your
+                        commemorative Universal Brotherhood Day
+                        certificate.
+                    </p>
+
+                </div>
+
+
+                <section
+                    class="selfie-taker"
+                    id="selfie_taker"
+                >
+
+                    <div class="certificate-intro">
+
+                        <div class="certificate-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Your Certificate Awaits
+                        </h3>
+
+                        <p>
+                            Enter your name exactly as you would
+                            like it to appear on your certificate.
+                        </p>
+
+                    </div>
+
+
+                    <div class="name-field">
+
+                        <label for="user_name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="user_name"
+                            name="user_name"
+                            placeholder="Enter your name..."
+                            autocomplete="name"
+                        >
+
+                    </div>
+
+
+                    <button
+                        class="selfie-btn primary-btn"
+                        id="selfie_btn"
+                        type="button"
+                    >
+                        📷 Click a Selfie
+                    </button>
+
+                </section>
+
+            </section>
+
+
+            <!-- ==================================================
+                 NAVIGATION
+            =================================================== -->
+
+            <footer class="flow-navigation">
+
+                <button
+                    id="prev_btn"
+                    class="nav-btn nav-previous"
+                    type="button"
+                >
+                    ← Previous
+                </button>
+
+
+                <span class="navigation-message">
+                    Celebrate Universal Brotherhood
+                </span>
+
+
+                <button
+                    id="next_btn"
+                    class="nav-btn nav-next"
+                    type="button"
+                >
+                    Next →
+                </button>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>
+            In celebration of
+            <strong>Universal Brotherhood Day</strong>
+        </p>
+
+        <span>
+            Ramakrishna Math • Hyderabad
+        </span>
+
+    </footer>
+
+
+    <script src="constants.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
