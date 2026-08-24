@@ -513,6 +513,30 @@ selfie_btn.addEventListener("click", async () => {
   }
 
 
+
+
+  // ==================================================
+  // CREATE VIDEO ELEMENT
+  // ==================================================
+
+  video_ele = document.createElement("video");
+
+  video_ele.autoplay = true;
+  video_ele.playsInline = true;
+  video_ele.tabIndex = 0;
+
+  video_ele.srcObject = media_stream;
+
+  selfie_section.appendChild(video_ele);
+
+  video_ele.addEventListener("loadedmetadata", () => {
+    video_ele.focus();
+
+    video_ele.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  });
   // ==================================================
   // CREATE CAPTURE BUTTON
   // ==================================================
@@ -531,25 +555,6 @@ selfie_btn.addEventListener("click", async () => {
   selfie_section.appendChild(
     capture_btn
   );
-
-
-  // ==================================================
-  // CREATE VIDEO ELEMENT
-  // ==================================================
-
-  video_ele =
-    document.createElement("video");
-
-  video_ele.autoplay = true;
-  video_ele.playsInline = true;
-
-  video_ele.srcObject =
-    media_stream;
-
-  selfie_section.appendChild(
-    video_ele
-  );
-
 
   // ==================================================
   // CAPTURE SELFIE

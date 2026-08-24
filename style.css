@@ -762,6 +762,8 @@ button:disabled {
 #selfie_taker video {
     display: block;
 
+    transform: scaleX(-1);
+
     width: 400px;
     height: 600px;
     max-width: 100%;
