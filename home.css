@@ -50,7 +50,7 @@ body {
 
 .site-logo {
   display: block;
-  width: min(180px, 60vw);
+  width: min(180px, 40vw);
   height: auto;
   margin: 0 auto 28px;
 }
