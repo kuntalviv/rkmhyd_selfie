@@ -939,7 +939,16 @@ selfie_btn.addEventListener("click", async () => {
 
   <p class="invitation">
     You are cordially invited to
-    <strong>Ramakrishna Math, Hyderabad</strong>
+    <strong>
+      <a
+        class="math-location"
+        href="https://maps.google.com/maps?ll=17.411668,78.481537&z=12&t=m&hl=en&gl=US&mapclient=embed&cid=14866785817335693255"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ramakrishna Math, Hyderabad (Location)
+      </a>
+    </strong>
     on <strong>September 11, 2026</strong>,
     along with your friends and family members.
   </p>
