@@ -64,6 +64,123 @@ body {
     margin: 0;
 }
 
+.gallery-section {
+  padding: 80px 24px;
+
+  background: #fffaf3;
+}
+
+.gallery-heading {
+  max-width: 720px;
+
+  margin: 0 auto 40px;
+
+  text-align: center;
+}
+
+.gallery-heading h2 {
+  margin: 0 0 14px;
+
+  font-size: clamp(30px, 5vw, 46px);
+}
+
+.gallery-heading p {
+  margin: 0;
+
+  color: #6f6258;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   GALLERY FLEXBOX
+================================================== */
+
+.gallery-grid {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 24px;
+}
+
+
+/* Maximum 2 images per row */
+.gallery-item {
+  flex: 1 1 calc(50% - 12px);
+
+  margin: 0;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: white;
+
+  box-shadow:
+    0 10px 30px
+    rgba(70, 45, 25, 0.08);
+}
+
+.gallery-item img {
+  display: block;
+
+  width: 100%;
+  height: 360px;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-item figcaption {
+  padding: 16px 18px;
+
+  color: #675548;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+  .gallery-section {
+    padding: 55px 16px;
+  }
+
+  .gallery-grid {
+    gap: 18px;
+  }
+
+  .gallery-item {
+    flex-basis: 100%;
+  }
+
+  .gallery-item img {
+    height: 280px;
+  }
+
+}
+
+
 .share-btn {
     margin-left: 10px;
     padding: 15px 25px;
