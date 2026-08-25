@@ -1,5 +1,5 @@
 /* =========================================================
-   GLOBAL
+GLOBAL
 ========================================================= */
 
 * {
@@ -14,18 +14,18 @@ body {
     margin: 0;
 
     font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+    Georgia,
+    "Times New Roman",
+    serif;
 
     color: #30251d;
 
     background:
-        linear-gradient(
-            180deg,
-            #fffaf2 0%,
-            #f8efe2 100%
-        );
+    linear-gradient(
+    180deg,
+    #fffaf2 0%,
+    #f8efe2 100%
+    );
 
     min-height: 100vh;
 }
@@ -46,18 +46,18 @@ button:disabled {
 
 
 /* =========================================================
-   HEADER
+HEADER
 ========================================================= */
 
 .site-header {
     padding: 28px 24px 36px;
 
     background:
-        linear-gradient(
-            135deg,
-            #2b1b12,
-            #5a2917
-        );
+    linear-gradient(
+    135deg,
+    #2b1b12,
+    #5a2917
+    );
 
     color: white;
 
@@ -108,23 +108,27 @@ button:disabled {
 /* SWAMIJI IMAGE */
 
 .header-swami {
-    width: 110px;
-    height: 140px;
+    width: 100px;
+    height: 120px;
+
+    min-width: 100px;
+    max-width: 100px;
+
+    min-height: 120px;
+    max-height: 120px;
 
     object-fit: cover;
     object-position: top center;
 
-    flex-shrink: 0;
+    flex: 0 0 100px;
 
-    border-radius: 12px;
-
+    border-radius: 10px;
     border: 2px solid rgba(239, 180, 125, 0.65);
 
     box-shadow:
-        0 8px 25px
-        rgba(0, 0, 0, 0.22);
+    0 8px 25px
+    rgba(0, 0, 0, 0.22);
 }
-
 
 /* TITLE */
 
@@ -176,12 +180,17 @@ button:disabled {
     }
 
     .header-swami {
-        width: 75px;
-        height: 100px;
+        width: 70px;
+        height: 90px;
 
-        border-radius: 9px;
+        min-width: 70px;
+        max-width: 70px;
+
+        min-height: 90px;
+        max-height: 90px;
+
+        flex-basis: 70px;
     }
-
     .header-title h1 {
         font-size: 28px;
     }
@@ -193,7 +202,7 @@ button:disabled {
 }
 
 /* =========================================================
-   PAGE SHELL
+PAGE SHELL
 ========================================================= */
 
 .page-shell {
@@ -211,13 +220,13 @@ button:disabled {
     border-radius: 24px;
 
     box-shadow:
-        0 18px 55px
-        rgba(73, 45, 26, 0.09);
+    0 18px 55px
+    rgba(73, 45, 26, 0.09);
 }
 
 
 /* =========================================================
-   JOURNEY PROGRESS
+JOURNEY PROGRESS
 ========================================================= */
 
 .journey-progress {
@@ -281,7 +290,7 @@ button:disabled {
 
 
 /* =========================================================
-   SECTION HEADINGS
+SECTION HEADINGS
 ========================================================= */
 
 .section-heading {
@@ -328,7 +337,7 @@ button:disabled {
 
 
 /* =========================================================
-   SPEECH CONTROLS
+SPEECH CONTROLS
 ========================================================= */
 
 .speech-controls {
@@ -355,9 +364,9 @@ button:disabled {
     font-weight: 700;
 
     transition:
-        transform 0.18s ease,
-        background 0.18s ease,
-        box-shadow 0.18s ease;
+    transform 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .control-btn {
@@ -390,7 +399,7 @@ button:disabled {
 
 
 /* =========================================================
-   SPEECH DOCUMENT
+SPEECH DOCUMENT
 ========================================================= */
 
 #speech_container {
@@ -400,14 +409,14 @@ button:disabled {
     border-radius: 18px;
 
     background:
-        linear-gradient(
-            rgba(255, 253, 248, 0.96),
-            rgba(255, 250, 241, 0.96)
-        );
+    linear-gradient(
+    rgba(255, 253, 248, 0.96),
+    rgba(255, 250, 241, 0.96)
+    );
 
     box-shadow:
-        inset 0 0 60px
-        rgba(119, 77, 40, 0.035);
+    inset 0 0 60px
+    rgba(119, 77, 40, 0.035);
 }
 
 .speech-portrait {
@@ -426,8 +435,8 @@ button:disabled {
     background: #fff;
 
     box-shadow:
-        0 12px 30px
-        rgba(64, 39, 22, 0.13);
+    0 12px 30px
+    rgba(64, 39, 22, 0.13);
 }
 
 .portrait-frame img {
@@ -504,7 +513,7 @@ button:disabled {
 
 
 /* =========================================================
-   SPEECH TEXT
+SPEECH TEXT
 ========================================================= */
 
 #speech_main_text {
@@ -540,8 +549,8 @@ button:disabled {
     border-radius: 4px;
 
     transition:
-        background 0.12s ease,
-        color 0.12s ease;
+    background 0.12s ease,
+    color 0.12s ease;
 }
 
 .word-active {
@@ -553,7 +562,7 @@ button:disabled {
 
 
 /* =========================================================
-   QUIZ
+QUIZ
 ========================================================= */
 
 #quiz_content,
@@ -648,8 +657,8 @@ button:disabled {
     cursor: pointer;
 
     transition:
-        border 0.15s ease,
-        background 0.15s ease;
+    border 0.15s ease,
+    background 0.15s ease;
 }
 
 .quiz-option:hover {
@@ -715,7 +724,7 @@ button:disabled {
 
 
 /* =========================================================
-   SELFIE / CERTIFICATE
+SELFIE / CERTIFICATE
 ========================================================= */
 
 .selfie-taker {
@@ -728,11 +737,11 @@ button:disabled {
     border-radius: 18px;
 
     background:
-        linear-gradient(
-            135deg,
-            #fffaf3,
-            #f8eadb
-        );
+    linear-gradient(
+    135deg,
+    #fffaf3,
+    #f8eadb
+    );
 
     text-align: center;
 }
@@ -812,16 +821,16 @@ button:disabled {
     font-size: 16px;
 
     transition:
-        border 0.2s ease,
-        box-shadow 0.2s ease;
+    border 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 #user_name:focus {
     border-color: #c45b29;
 
     box-shadow:
-        0 0 0 3px
-        rgba(196, 91, 41, 0.12);
+    0 0 0 3px
+    rgba(196, 91, 41, 0.12);
 }
 
 .selfie-btn {
@@ -834,23 +843,23 @@ button:disabled {
 /* Camera */
 
 #selfie_taker video {
-  display: block;
+    display: block;
 
-  width: min(100%, 600px);
-  height: auto;
-  aspect-ratio: 2 / 3;
+    width: min(100%, 600px);
+    height: auto;
+    aspect-ratio: 2 / 3;
 
-  margin: 25px auto;
+    margin: 25px auto;
 
-  object-fit: contain;
-  object-position: center;
+    object-fit: contain;
+    object-position: center;
 
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 
-  background: #111;
+    background: #111;
 
-  border: 6px solid white;
-  border-radius: 20px;
+    border: 6px solid white;
+    border-radius: 20px;
 }
 
 /* Certificate preview */
@@ -867,8 +876,8 @@ button:disabled {
     border-radius: 10px;
 
     box-shadow:
-        0 15px 40px
-        rgba(57, 36, 21, 0.16);
+    0 15px 40px
+    rgba(57, 36, 21, 0.16);
 }
 
 .capture-btn,
@@ -891,66 +900,66 @@ button:disabled {
 
 
 .participation-message {
-  max-width: 650px;
+    max-width: 650px;
 
-  margin: 30px auto 10px;
-  padding: 24px 28px;
+    margin: 30px auto 10px;
+    padding: 24px 28px;
 
-  text-align: center;
+    text-align: center;
 
-  background: #fff8ef;
+    background: #fff8ef;
 
-  border: 1px solid #ead4bd;
-  border-radius: 16px;
+    border: 1px solid #ead4bd;
+    border-radius: 16px;
 
-  box-shadow:
+    box-shadow:
     0 8px 25px rgba(80, 48, 25, 0.07);
 }
 
 .participation-icon {
-  display: block;
+    display: block;
 
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 
-  color: #c35422;
-  font-size: 22px;
+    color: #c35422;
+    font-size: 22px;
 }
 
 .thank-you {
-  margin: 0 0 10px;
+    margin: 0 0 10px;
 
-  color: #a7431c;
+    color: #a7431c;
 
-  font-family: Georgia, serif;
-  font-size: 22px;
-  font-weight: bold;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .invitation {
-  margin: 0;
+    margin: 0;
 
-  color: #5d4a3d;
+    color: #5d4a3d;
 
-  font-size: 16px;
-  line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .invitation strong {
-  color: #8f3c1c;
+    color: #8f3c1c;
 }
 
 .invitation-closing {
-  margin: 12px 0 0;
+    margin: 12px 0 0;
 
-  color: #806653;
+    color: #806653;
 
-  font-size: 14px;
-  font-style: italic;
+    font-size: 14px;
+    font-style: italic;
 }
 
 
 /* =========================================================
-   BOTTOM NAVIGATION
+BOTTOM NAVIGATION
 ========================================================= */
 
 .flow-navigation {
@@ -1001,7 +1010,7 @@ button:disabled {
 
 
 /* =========================================================
-   SITE FOOTER
+SITE FOOTER
 ========================================================= */
 
 .site-footer {
@@ -1026,7 +1035,7 @@ button:disabled {
 
 
 /* =========================================================
-   MOBILE
+MOBILE
 ========================================================= */
 
 @media (max-width: 700px) {
