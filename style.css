@@ -69,6 +69,17 @@ button:disabled {
     margin: 0 auto;
 }
 
+.brand {
+    display: block;
+}
+
+.site-logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 24px;
+}
+
 .home-link {
     display: inline-block;
 

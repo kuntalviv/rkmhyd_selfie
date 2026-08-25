@@ -48,6 +48,13 @@ body {
   max-width: 850px;
 }
 
+.site-logo {
+  display: block;
+  width: min(180px, 60vw);
+  height: auto;
+  margin: 0 auto 28px;
+}
+
 .hero-actions {
     display: flex;
     justify-content: center;
@@ -353,6 +360,12 @@ body {
 
     padding:
       70px 20px;
+  }
+
+
+  .hero .site-logo {
+    width: min(110px, 30vw);
+    margin-bottom: 18px;
   }
 
 
