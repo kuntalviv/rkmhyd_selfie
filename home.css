@@ -93,6 +93,43 @@ body {
   line-height: 1.7;
 }
 
+.gallery-more {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+.gallery-more-btn {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  border: 1px solid #c35422;
+  border-radius: 999px;
+
+  color: #a7431c;
+  background: transparent;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.gallery-more-btn:hover {
+  background: #c35422;
+  color: white;
+
+  transform: translateY(-2px);
+}
+
 
 /* ==================================================
    GALLERY FLEXBOX
