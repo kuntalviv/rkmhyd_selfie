@@ -117,6 +117,19 @@ const server = http.createServer((req, res) => {
       res.end(data);
     })
   }
+  else if (req.url === "/Certificate_Template.jpeg") {
+    fs.readFile("Certificate_Template.jpeg", (err, data) => {
+      if (err) {
+
+        res.writeHead(500);
+        res.end("Error loading app.js");
+        return;
+      }
+
+      res.writeHead(200, { "Content-Type": "image/jpg" });
+      res.end(data);
+    })
+  }
 
   else if (req.method === 'GET' && req.url === '/speech.mp3') {
 

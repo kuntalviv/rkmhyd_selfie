@@ -565,7 +565,7 @@ selfie_btn.addEventListener("click", async () => {
         new Image();
 
       certificate_template.src =
-        "./Certificate_Template_Sample.png";
+        "./Certificate_Template.jpeg";
 
 
 
@@ -645,11 +645,13 @@ selfie_btn.addEventListener("click", async () => {
       // CERTIFICATE PHOTO SLOT
       // ==================================================
 
-      const photoX = 115;
-      const photoY = 290;
+      const photoX = 55;
+      const photoY = 395;
 
-      const photoWidth = 200 * 2;
-      const photoHeight = 265 * 2;
+      const scaleX = 0.8;
+      const scaleY = 0.75;
+      const photoWidth = 200 * 2 * scaleX;
+      const photoHeight = 265 * 2 * scaleY;
 
 
       let sx;
@@ -782,7 +784,7 @@ selfie_btn.addEventListener("click", async () => {
       ctx.fillText(
         user_name,
         950,
-        410
+        650
       );
 
 
@@ -901,7 +903,7 @@ selfie_btn.addEventListener("click", async () => {
 
             try {
 
-              const participation_url = "https://kuntalviv.github.io/rkmhyd_selfie/";
+              const participation_url = "https://universalbrotherhood.online";
 
               await navigator.share({
                 title: "Universal Brotherhood Day",
@@ -953,7 +955,7 @@ selfie_btn.addEventListener("click", async () => {
         Ramakrishna Math, Hyderabad (Location)
       </a>
     </strong>
-    on <strong>September 11, 2026</strong>,
+    on <strong>September 11, 2026 (10:00 AM)</strong>,
     along with your friends and family members.
   </p>
 
@@ -997,6 +999,8 @@ const show_page = (index) => {
     i === index ? step.classList.add("active") : step.classList.remove("active");
   });
 
+
+  pages[index].scrollIntoView();
   // Disable Previous on first page
   prev_btn.disabled = index === 0;
 
