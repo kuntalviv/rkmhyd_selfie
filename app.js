@@ -839,18 +839,40 @@ selfie_btn.addEventListener("click", async () => {
 
       selfie_btn.innerText = "Retake";
 
+      const download_certificate = () => {
+        canvas.toBlob((blob) => {
+          if (!blob) {
+            alert("Could not generate certificate.");
+            return;
+          }
+
+          const blob_url = URL.createObjectURL(blob);
+
+          const link = document.createElement("a");
+
+          link.href = blob_url;
+          link.download = "Universal_Brotherhood_Certificate.png";
+
+          document.body.appendChild(link);
+
+          link.click();
+          link.remove();
+
+          // Don't revoke immediately — Safari/iPhone
+          // may still be processing the download.
+          setTimeout(() => {
+            URL.revokeObjectURL(blob_url);
+          }, 1000);
+
+        }, "image/png");
+      };
+
+
       download_btn = document.createElement("button");
       download_btn.innerText = "Download Certificate";
       download_btn.classList.add("download-btn");
       download_btn.addEventListener("click", () => {
-        const image_url = canvas.toDataURL("image/png");
-
-        const link = document.createElement("a");
-
-        link.href = image_url;
-        link.download = "Vivekananda_Certificate.png";
-
-        link.click();
+        download_certificate();
       });
 
       selfie_section.appendChild(download_btn);
