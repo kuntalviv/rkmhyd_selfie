@@ -926,6 +926,30 @@ selfie_btn.addEventListener("click", async () => {
       });
 
       selfie_section.appendChild(share_cert_btn);
+      const participation_message = document.createElement("div");
+
+      participation_message.classList.add("participation-message");
+
+      participation_message.innerHTML = `
+  <span class="participation-icon">✦</span>
+
+  <p class="thank-you">
+    Thank you for participating!
+  </p>
+
+  <p class="invitation">
+    You are cordially invited to
+    <strong>Ramakrishna Math, Hyderabad</strong>
+    on <strong>September 11, 2026</strong>,
+    along with your friends and family members.
+  </p>
+
+  <p class="invitation-closing">
+    We look forward to welcoming you. 🙏
+  </p>
+`;
+
+      selfie_section.appendChild(participation_message);
     }
 
   );

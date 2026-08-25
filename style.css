@@ -816,6 +816,65 @@ button:disabled {
 }
 
 
+.participation-message {
+  max-width: 650px;
+
+  margin: 30px auto 10px;
+  padding: 24px 28px;
+
+  text-align: center;
+
+  background: #fff8ef;
+
+  border: 1px solid #ead4bd;
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(80, 48, 25, 0.07);
+}
+
+.participation-icon {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #c35422;
+  font-size: 22px;
+}
+
+.thank-you {
+  margin: 0 0 10px;
+
+  color: #a7431c;
+
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.invitation {
+  margin: 0;
+
+  color: #5d4a3d;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.invitation strong {
+  color: #8f3c1c;
+}
+
+.invitation-closing {
+  margin: 12px 0 0;
+
+  color: #806653;
+
+  font-size: 14px;
+  font-style: italic;
+}
+
+
 /* =========================================================
    BOTTOM NAVIGATION
 ========================================================= */
