@@ -69,6 +69,9 @@ button:disabled {
     margin: 0 auto;
 }
 
+
+/* HOME LINK */
+
 .home-link {
     display: inline-block;
 
@@ -87,8 +90,46 @@ button:disabled {
     color: white;
 }
 
+
+/* IMAGE + TITLE */
+
+.header-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* SWAMIJI IMAGE */
+
+.header-swami {
+    width: 110px;
+    height: 140px;
+
+    object-fit: cover;
+    object-position: top center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    border: 2px solid rgba(239, 180, 125, 0.65);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.22);
+}
+
+
+/* TITLE */
+
 .header-title {
-    text-align: center;
+    text-align: left;
 }
 
 .header-kicker {
@@ -117,6 +158,39 @@ button:disabled {
     color: #efb47d;
 }
 
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 20px 16px 28px;
+    }
+
+    .home-link {
+        margin-bottom: 20px;
+    }
+
+    .header-hero {
+        gap: 16px;
+    }
+
+    .header-swami {
+        width: 75px;
+        height: 100px;
+
+        border-radius: 9px;
+    }
+
+    .header-title h1 {
+        font-size: 28px;
+    }
+
+    .header-kicker {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+}
 
 /* =========================================================
    PAGE SHELL

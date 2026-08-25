@@ -903,10 +903,10 @@ selfie_btn.addEventListener("click", async () => {
 
               await navigator.share({
                 title: "Universal Brotherhood Day",
-                text: "I celebrated Universal Brotherhood Day with Ramakrishna Math Hyderabad.",
+                text: "I participated in the Universal Brotherhood Day campaign organized by Ramakrishna Math, Hyderabad. Join me in celebrating Swami Vivekananda's message of universal brotherhood!",
+                url: "https://kuntalviv.github.io/rkmhyd_selfie/",
                 files: [file]
               });
-
             } catch (error) {
 
               console.log(
