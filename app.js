@@ -787,6 +787,8 @@ selfie_btn.addEventListener("click", async () => {
         650
       );
 
+      await recordCertificateGeneration();
+
 
       // ==================================================
       // STOP CAMERA

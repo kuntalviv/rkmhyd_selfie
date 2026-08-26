@@ -90,6 +90,23 @@ const server = http.createServer((req, res) => {
     });
   }
 
+  else if (req.url === "/supabase.js") {
+    fs.readFile("supabase.js", (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end("Error loading app.js");
+        return;
+      }
+
+      res.writeHead(200, {
+        "Content-Type": "text/javascript"
+      });
+      res.end(data);
+    });
+  }
+
+
+
   else if (req.url === "/Certificate_Template_Sample.png") {
     fs.readFile("Certificate_Template_Sample.png", (err, data) => {
       if (err) {
@@ -117,6 +134,28 @@ const server = http.createServer((req, res) => {
       res.end(data);
     })
   }
+
+  else if (req.url === "/math_logo.svg") {
+    fs.readFile("math_logo.svg", (err, data) => {
+      if (err) {
+
+        res.writeHead(500);
+        res.end("Error loading app.js");
+        return;
+      }
+
+      res.writeHead(200, {
+        'Content-Type': 'image/svg+xml',
+        'Content-Length': Buffer.byteLength(data)
+      });
+
+      // 3. Send the data and complete the response
+      res.end(data);
+
+    })
+  }
+
+
   else if (req.url === "/Certificate_Template.jpeg") {
     fs.readFile("Certificate_Template.jpeg", (err, data) => {
       if (err) {
