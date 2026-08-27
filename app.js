@@ -565,7 +565,7 @@ selfie_btn.addEventListener("click", async () => {
         new Image();
 
       certificate_template.src =
-        "./Certificate_Template.jpeg";
+        "./Certificate_Template.jpg";
 
 
 

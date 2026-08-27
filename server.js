@@ -107,8 +107,8 @@ const server = http.createServer((req, res) => {
 
 
 
-  else if (req.url === "/Certificate_Template_Sample.png") {
-    fs.readFile("Certificate_Template_Sample.png", (err, data) => {
+  else if (req.url === "/Certificate_Template.jpg") {
+    fs.readFile("Certificate_Template.jpg", (err, data) => {
       if (err) {
 
         res.writeHead(500);
