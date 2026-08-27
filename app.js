@@ -565,7 +565,7 @@ selfie_btn.addEventListener("click", async () => {
         new Image();
 
       certificate_template.src =
-        "./Certificate_Template.jpeg";
+        "./Certificate_Template.png";
 
 
 
@@ -957,7 +957,7 @@ selfie_btn.addEventListener("click", async () => {
         Ramakrishna Math, Hyderabad (Location)
       </a>
     </strong>
-    on <strong>September 11, 2026 (10:00 AM)</strong>,
+    for a youth convention on <strong>September 11, 2026 (10:00 AM)</strong>,
     along with your friends and family members.
   </p>
 
