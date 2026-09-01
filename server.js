@@ -107,8 +107,8 @@ const server = http.createServer((req, res) => {
 
 
 
-  else if (req.url === "/Certificate_Template.jpg") {
-    fs.readFile("Certificate_Template.jpg", (err, data) => {
+  else if (req.url === "/campaign.jpg") {
+    fs.readFile("campaign.jpg", (err, data) => {
       if (err) {
 
         res.writeHead(500);
@@ -116,7 +116,7 @@ const server = http.createServer((req, res) => {
         return;
       }
 
-      res.writeHead(200, { "Content-Type": "image/png" });
+      res.writeHead(200, { "Content-Type": "image/jpg" });
       res.end(data);
     })
   }
@@ -156,8 +156,8 @@ const server = http.createServer((req, res) => {
   }
 
 
-  else if (req.url === "/Certificate_Template.jpeg") {
-    fs.readFile("Certificate_Template.jpeg", (err, data) => {
+  else if (req.url === "/Certificate_Template.jpg") {
+    fs.readFile("Certificate_Template.jpg", (err, data) => {
       if (err) {
 
         res.writeHead(500);
